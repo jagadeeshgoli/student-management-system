@@ -1,5 +1,7 @@
 # Student Management System (CLI) — Python + PostgreSQL
 <img width="581" height="343" alt="image" src="https://github.com/user-attachments/assets/7b940b5c-efb6-4737-be75-c9e8ca3d0635" />
+<img width="581" height="343" alt="image" src="https://github.com/user-attachments/assets/cf057957-4fe5-4822-a1fb-b34c5f1c7984" />
+
 
 
 A high-performance CLI-based backend system built by **Goli Jagadeesh** — Python & Backend Developer — designed to manage student records and academic departments with optimized PostgreSQL search, modular architecture, and clean code structure.
