@@ -35,7 +35,7 @@ def get_user_input(prompt):
         value = input(prompt).strip()
         if value:
             return value
-        print("⚠️  Input cannot be empty. Please try again.")
+        print("  Input cannot be empty. Please try again.")
 
 def department_menu():
     """Department management menu"""
@@ -60,7 +60,7 @@ def department_menu():
             if validate_department_name(name):
                 add_department(name)
             else:
-                print("⚠️  Invalid department name format.")
+                print("  Invalid department name format.")
             input("\nPress Enter to continue...")
             
         elif choice == '2':
@@ -83,9 +83,9 @@ def department_menu():
                 if validate_department_name(new_name):
                     update_department(dept_id, new_name)
                 else:
-                    print("⚠️  Invalid department name format.")
+                    print(" Invalid department name format.")
             except ValueError:
-                print("⚠️  Invalid department ID.")
+                print("Invalid department ID.")
             input("\nPress Enter to continue...")
             
         elif choice == '4':
@@ -94,18 +94,18 @@ def department_menu():
                 dept_id = int(get_user_input("Enter department ID to delete: "))
                 delete_department(dept_id)
             except ValueError:
-                print("⚠️  Invalid department ID.")
+                print("Invalid department ID.")
             input("\nPress Enter to continue...")
             
         elif choice == '5':
             break  # Back to main menu
             
         elif choice == '0':
-            print("Goodbye! 👋")
+            print("Goodbye! ")
             sys.exit(0)
             
         else:
-            print("⚠️  Invalid choice. Please try again.")
+            print("  Invalid choice. Please try again.")
             input("\nPress Enter to continue...")
 
 def student_menu():
@@ -131,19 +131,19 @@ def student_menu():
             # Add Student
             name = get_user_input("Enter student name: ")
             if not validate_name(name):
-                print("⚠️  Invalid name format.")
+                print(" Invalid name format.")
                 input("\nPress Enter to continue...")
                 continue
                 
             email = get_user_input("Enter student email: ")
             if not validate_email(email):
-                print("⚠️  Invalid email format.")
+                print("  Invalid email format.")
                 input("\nPress Enter to continue...")
                 continue
             
             phone = input("Enter phone number (optional, press Enter to skip): ").strip()
             if phone and not validate_phone(phone):
-                print("⚠️  Invalid phone format.")
+                print(" Invalid phone format.")
                 input("\nPress Enter to continue...")
                 continue
             
@@ -153,7 +153,7 @@ def student_menu():
                 try:
                     department_id = int(dept_choice)
                 except ValueError:
-                    print("⚠️  Invalid department ID.")
+                    print(" Invalid department ID.")
                     input("\nPress Enter to continue...")
                     continue
             
@@ -189,11 +189,11 @@ def student_menu():
                     dept_id = int(get_user_input("Enter department ID: "))
                     students = search_students(department_id=dept_id)
                 except ValueError:
-                    print("⚠️  Invalid department ID.")
+                    print(" Invalid department ID.")
                     input("\nPress Enter to continue...")
                     continue
             else:
-                print("⚠️  Invalid search option.")
+                print("Invalid search option.")
                 input("\nPress Enter to continue...")
                 continue
             
@@ -226,7 +226,7 @@ def student_menu():
                     if validate_name(new_name):
                         updates['name'] = new_name
                     else:
-                        print("⚠️  Invalid name format.")
+                        print(" Invalid name format.")
                         input("\nPress Enter to continue...")
                         continue
                         
@@ -235,14 +235,14 @@ def student_menu():
                     if validate_email(new_email):
                         updates['email'] = new_email
                     else:
-                        print("⚠️  Invalid email format.")
+                        print("Invalid email format.")
                         input("\nPress Enter to continue...")
                         continue
                         
                 elif update_choice == '3':
                     new_phone = input("Enter new phone (or press Enter to clear): ").strip()
                     if new_phone and not validate_phone(new_phone):
-                        print("⚠️  Invalid phone format.")
+                        print("Invalid phone format.")
                         input("\nPress Enter to continue...")
                         continue
                     updates['phone'] = new_phone if new_phone else None
@@ -253,13 +253,13 @@ def student_menu():
                         try:
                             updates['department_id'] = int(dept_input)
                         except ValueError:
-                            print("⚠️  Invalid department ID.")
+                            print("Invalid department ID.")
                             input("\nPress Enter to continue...")
                             continue
                     else:
                         updates['department_id'] = None
                 else:
-                    print("⚠️  Invalid update option.")
+                    print("Invalid update option.")
                     input("\nPress Enter to continue...")
                     continue
                 
@@ -269,7 +269,7 @@ def student_menu():
                     print("No updates provided.")
                     
             except ValueError:
-                print("⚠️  Invalid student ID.")
+                print(" Invalid student ID.")
             input("\nPress Enter to continue...")
             
         elif choice == '5':
@@ -278,7 +278,7 @@ def student_menu():
                 student_id = int(get_user_input("Enter student ID to delete: "))
                 delete_student(student_id)
             except ValueError:
-                print("⚠️  Invalid student ID.")
+                print(" Invalid student ID.")
             input("\nPress Enter to continue...")
             
         elif choice == '6':
@@ -298,23 +298,23 @@ def student_menu():
                 else:
                     print("Student not found.")
             except ValueError:
-                print("⚠️  Invalid student ID.")
+                print(" Invalid student ID.")
             input("\nPress Enter to continue...")
             
         elif choice == '7':
             break  # Back to main menu
             
         elif choice == '0':
-            print("Goodbye! 👋")
+            print("Goodbye!")
             sys.exit(0)
             
         else:
-            print("⚠️  Invalid choice. Please try again.")
+            print(" Invalid choice. Please try again.")
             input("\nPress Enter to continue...")
 
 def main():
     """Main application entry point"""
-    print("🚀 Welcome to Student Management System!")
+    print("Welcome to Student Management System!")
     print("Connecting to database...")
     
     # Test database connection
@@ -324,7 +324,7 @@ def main():
         print("Database connection successful!")
         input("\nPress Enter to continue to main menu...")
     except Exception as e:
-        print(f"❌ Database connection failed: {e}")
+        print(f"Database connection failed: {e}")
         print("Please check your database configuration and try again.")
         return
     
@@ -346,10 +346,10 @@ def main():
         elif choice == '2':
             student_menu()
         elif choice == '3' or choice == '0':
-            print("Goodbye! 👋")
+            print("Goodbye! ")
             break
         else:
-            print("⚠️  Invalid choice. Please try again.")
+            print("  Invalid choice. Please try again.")
             input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
