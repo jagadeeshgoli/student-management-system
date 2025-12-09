@@ -373,7 +373,7 @@ def test_student_operations():
     
     dept_id = add_department("Test Department for Students")
     if not dept_id:
-        print("⚠️  Could not create test department. Testing student without department...")
+        print(" Could not create test department. Testing student without department...")
         dept_id = None
     
     # Test add student (with or without department)
