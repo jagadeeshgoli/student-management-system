@@ -1,26 +1,28 @@
 # Student Management System (CLI) — Python + PostgreSQL
+<img width="581" height="343" alt="image" src="https://github.com/user-attachments/assets/7b940b5c-efb6-4737-be75-c9e8ca3d0635" />
+
 
 A high-performance CLI-based backend system built by **Goli Jagadeesh** — Python & Backend Developer — designed to manage student records and academic departments with optimized PostgreSQL search, modular architecture, and clean code structure.
 
-## 👨‍💻 Developer
+##  Developer
 **Goli Jagadeesh**  
 Python & Backend Developer (Fresher)  
-📍 Lam, Guntur, Andhra Pradesh — 522034  
-📱 7671086404  
-📧 jagadeeshgoli22@gmail.com  
-🔗 GitHub: https://github.com/jagadeeshgoli  
-🔗 LinkedIn: https://linkedin.com/in/jagadeeshgoli
+ Lam, Guntur, Andhra Pradesh — 522034  
+ 7671086404  
+ jagadeeshgoli22@gmail.com  
+ GitHub: https://github.com/jagadeeshgoli  
+ LinkedIn: https://linkedin.com/in/jagadeeshgoli
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Complete CRUD Operations**
   - Add / View / Update / Delete students & departments
   - Search by name (partial match) or department
 
 - **Performance Optimized**
-  - ⏱ 60% faster search using PostgreSQL indexes
+  - 60% faster search using PostgreSQL indexes
   - Efficient JOIN queries for relational data
 
 - **Data Integrity & Validation**
@@ -34,7 +36,7 @@ Python & Backend Developer (Fresher)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Technologies |
 |----------|-------------|
@@ -46,7 +48,7 @@ Python & Backend Developer (Fresher)
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 
@@ -62,7 +64,7 @@ student-management/
 
 ---
 
-## 📋 Setup & Installation
+##  Setup & Installation
 
 ### Clone the Repository
 ```bash
@@ -121,7 +123,7 @@ python3 main.py
 
 ---
 
-## 🧪 Validation Rules
+##  Validation Rules
 
 * Email — proper format check
 * Phone — 10–15 digits only
@@ -130,7 +132,7 @@ python3 main.py
 
 ---
 
-## 📊 Performance Improvements
+##  Performance Improvements
 
 | Feature            | Result                       |
 | ------------------ | ---------------------------- |
@@ -140,7 +142,7 @@ python3 main.py
 
 ---
 
-## 🛡️ Error Handling
+##  Error Handling
 
 * Duplicate emails/phone errors
 * Invalid foreign key references
@@ -149,7 +151,7 @@ python3 main.py
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 ```bash
 git checkout -b feature/AmazingFeature
@@ -159,16 +161,16 @@ git push origin feature/AmazingFeature
 
 ---
 
-## 📜 License
+##  License
 
 MIT License — free for commercial & personal use
 
 ---
 
-## 📞 Support
+##  Support
 
 For support or collaboration reach out at:
-**📧 [jagadeeshgoli22@gmail.com](mailto:jagadeeshgoli22@gmail.com)**
+** [jagadeeshgoli22@gmail.com](mailto:jagadeeshgoli22@gmail.com)**
 
 
 
