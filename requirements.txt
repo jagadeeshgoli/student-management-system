@@ -1,0 +1,15 @@
+# Database
+psycopg2-binary==2.9.7
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Optional: For better CLI experience (if you want advanced menus)
+click==8.1.7
+
+# Testing (when you start testing)
+pytest==7.4.3
+
+# Code formatting (optional but good practice)
+black==23.11.0
+flake8==6.1.0
